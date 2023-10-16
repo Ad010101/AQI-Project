@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="static/style_result.css">>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Air Quality Index Prediction
+		</div>
+		
+		
+	</div>
+	</header>
+
+	<div class="results">
+
+	<h2 >Air Quality Index Output</h2>
+	 <table>
+         <tbody>
+         <th>Air Quailty Index</th>
+         {# here we iterate over every item in our list#}
+         {% for item in prediction %}
+             <tr><td>{{ item }}</td></tr>
+         {% endfor %}
+         </tbody>
+     </table>
+	
+	</div>
+
+</body>
+</html>
