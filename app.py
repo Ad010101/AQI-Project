@@ -1,7 +1,7 @@
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
 import pickle
-loaded_model=pickle.load(open('XgBoost.pkl', 'rb'))
+loaded_model=pickle.load(open('regression_model.pkl', 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
